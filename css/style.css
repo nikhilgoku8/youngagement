@@ -5,8 +5,8 @@
 	#Media Queries
 	#Font-Face */
 :root{
-	--header-height: 103.63px;
-	--color1: #fffde9;
+	--header-height: 127.94px;
+	--orange: #f17f21;
 }
 *{
 	padding:0;
@@ -131,6 +131,7 @@ header {
 header .inner_container{
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
 	justify-content: space-between;
 }
 header .logo {
@@ -158,3 +159,16 @@ header.smaller nav {
 	
 }
 
+.btn{
+	background-color: var(--orange);
+	color: #fff;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+	text-transform: uppercase;
+}
+
+.btn:hover{
+	background-color: #e07a1d;
+}

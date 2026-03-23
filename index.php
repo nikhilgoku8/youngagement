@@ -33,7 +33,7 @@
 <body>
 
 <header>
-    <div class="container">
+    <div class="contain_90">
         <div class="inner_container">
 
             <div class="logo">
@@ -67,6 +67,9 @@
                     </li>
                 </ul>
             </nav>
+            <div class="c2a_btn">
+                <a href="#" class="btn">Contact Us</a>
+            </div>
 
         </div>
     </div>
