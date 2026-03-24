@@ -79,6 +79,22 @@
 
 <div id="main">
 
+<div class="hero">
+    <div class="contain_90">
+        <div class="inner_container">
+
+            <div class="video_wrapper">
+                <video autoplay muted loop>
+                    <source src="videos/hero.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- hero -->
+
 <!-- Slider main container -->
 <div class="swiper">
     <!-- Additional required wrapper -->
@@ -100,6 +116,7 @@
 </div>
 
 </div>
+<!-- main -->
 
 
 

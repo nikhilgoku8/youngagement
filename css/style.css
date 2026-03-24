@@ -172,3 +172,10 @@ header.smaller nav {
 .btn:hover{
 	background-color: #e07a1d;
 }
+
+/* hero */
+.hero .video_wrapper video{
+	width: 100%;
+	height: auto;
+	border-radius: 20px;
+}
