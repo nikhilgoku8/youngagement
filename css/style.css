@@ -179,3 +179,9 @@ header.smaller nav {
 	height: auto;
 	border-radius: 20px;
 }
+
+.heading{
+	font-size: clamp(40px, 3.125vw, 60px);
+	color: var(--orange);
+	line-height: 1.4;
+}
