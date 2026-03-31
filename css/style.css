@@ -12,17 +12,24 @@
 	padding:0;
 	margin:0;
 }
-/*@font-face {
-	font-family: 'Cresinta';
-	src: url('fonts/Cresinta-Regular.woff2') format('woff2');
+@font-face {
+	font-family: 'PointLight';
+	src: url('fonts/PointLight.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
-}*/
+}
+@font-face {
+	font-family: 'PointBookItalic';
+	src: url('fonts/PointBookItalic.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
 body{
 	height: 100%;
-	font-family: 'Open Sans', sans-serif;
-	font-size: clamp(14px, 1.25vw, 16px);
+	font-family: 'PointLight', sans-serif;
+	font-size: clamp(14px, 1.25vw, 20px);
 }
 #main{
 	width:100%;
@@ -40,7 +47,7 @@ table, th, td {
 th, td {
     padding: 10px;
     font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'PointLight', sans-serif;
     text-align: center;
 }
 th {
@@ -58,8 +65,8 @@ span{
 }
 
 p{
-	line-height: 1.4;
-	color: #6d6e70;
+	line-height: 1.6;
+	color: #000000;
 	padding: 0 0 15px 0;
 }
 
@@ -71,6 +78,14 @@ p{
 }
 .contain_90{
 	width: 90%;
+	margin: 0 auto;
+}
+.contain_80{
+	width: 80%;
+	margin: 0 auto;
+}
+.contain_70{
+	width: 70%;
 	margin: 0 auto;
 }
 .container:before, .container:after, .row:before, .row:after{
@@ -181,7 +196,138 @@ header.smaller nav {
 }
 
 .heading{
-	font-size: clamp(40px, 3.125vw, 60px);
+	font-size: clamp(50px, 3.125vw, 60px);
 	color: var(--orange);
 	line-height: 1.4;
+	text-align: center;
+	padding: 0 0 5vw;
+}
+.white{
+	color: #fff;
+}
+section{
+	padding: 5vw 0;
+}
+section.transform .info_boxes{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+section.transform .info_boxes .text_box{
+	padding: 0 10vw 0 0;
+}
+/* industries */
+.industries{
+	background-color: var(--orange);
+}
+.coverflow_slider_wrapper{
+	width: 100%;
+	padding: 2vw 0;
+}
+.coverflow_slider {
+	overflow-x: clip;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.coverflow_slider .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #444;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	cursor: pointer;
+}
+.coverflow_slider .swiper-slide.swiper-slide-active{
+	cursor: auto;
+}
+.coverflow_slider .swiper-slide .item_box{
+	transform: scale(0.80);
+	transition: all 0.3s;
+	pointer-events: none;
+	position: relative;
+	width: 100%;
+}
+.coverflow_slider .swiper-slide.swiper-slide-active .item_box{
+	transform: scale(1.15);
+	pointer-events: auto;
+}
+.coverflow_slider .swiper-slide .img_box{	
+	width: 100%;
+	position: relative;
+	padding: 125% 0 0 0;
+	border-radius: 25px;
+	overflow: hidden;
+}
+.coverflow_slider .swiper-slide .img_box img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.coverflow_slider .swiper-slide .industry_title{
+	font-family: 'PointBookItalic';
+	font-size: clamp(20px, 1.45vw, 30px);
+	color: #fff;
+	padding: 1vw 0 0 0;
+}
+[class*=custom-nav]{
+	--custom-nav-size: 20px;
+	--spacing: 10px;
+	font-size: var(--custom-nav-size);
+	background: #fff;
+	position: absolute;
+	top: calc(50% - ((var(--custom-nav-size) + var(--spacing)) / 2));
+	left: 0;
+	width: calc(var(--custom-nav-size) + var(--spacing));
+	height: calc(var(--custom-nav-size) + var(--spacing));
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*padding: 5px;*/
+	border-radius: 50%;
+	z-index: 1;
+	cursor: pointer;
+}
+.custom-nav-next{
+	left: unset;
+	right: 0;
+}
+
+.our_work .insta_boxes{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.our_work .insta_boxes .info_box{
+	width: calc(33.33% - 10px);
+	margin: 0 0 15px;
+}
+.our_work .insta_boxes .info_box .img_box{
+	width: 100%;
+	position: relative;
+	padding: 100% 0 0 0;
+	overflow: hidden;
+}
+.our_work .insta_boxes .info_box .img_box img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.youtube_wrapper{
+	background: var(--orange);
+}
+.youtube_wrapper .youtube_box a{
+	display: block;
+}
+.youtube_wrapper .youtube_box a img{
+	width: 100%;
 }
