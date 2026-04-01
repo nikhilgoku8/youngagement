@@ -141,7 +141,7 @@ header {
 	-ms-transition: height 0.3s;
 	-o-transition: height 0.3s;
 	transition: height 0.3s;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+	/* box-shadow: 0 0 5px rgba(0, 0, 0, 0.25); */
 }
 header .inner_container{
 	display: flex;
@@ -175,9 +175,10 @@ header.smaller nav {
 }
 
 .btn{
+	font-size: clamp(16px, 1.25vw, 18px);
 	background-color: var(--orange);
 	color: #fff;
-	padding: 10px 20px;
+	padding: 12px 20px 10px 20px;
 	text-decoration: none;
 	border-radius: 5px;
 	transition: background-color 0.3s;
@@ -196,7 +197,7 @@ header.smaller nav {
 }
 
 .heading{
-	font-size: clamp(50px, 3.125vw, 60px);
+	font-size: clamp(25px, 3.125vw, 60px);
 	color: var(--orange);
 	line-height: 1.4;
 	text-align: center;
@@ -207,6 +208,31 @@ header.smaller nav {
 }
 section{
 	padding: 5vw 0;
+	position: relative;
+}
+section.transform::before{
+	position: absolute;
+	content: '';
+	left: 5vw;
+	top: 5vw;
+	width: 4vw;
+	height: 6.5vw;
+	background: url(../images/dotted-rectangle-vertical.png) no-repeat;
+	background-size: contain;
+	background-position: left top;
+	z-index: -1;
+}
+section.transform::after{
+	position: absolute;
+	content: '';
+	right: 5vw;
+	bottom: 5vw;
+	width: 6.5vw;
+	height: 4vw;
+	background: url(../images/dotted-rectangle-horizontal.png) no-repeat;
+	background-size: contain;
+	background-position: left top;
+	z-index: -1;
 }
 section.transform .info_boxes{
 	display: flex;
@@ -219,6 +245,33 @@ section.transform .info_boxes .text_box{
 /* industries */
 .industries{
 	background-color: var(--orange);
+	z-index: 1;
+}
+.industries::before{
+	position: absolute;
+	content: '';
+	left: 5vw;
+	top: 5vw;
+	width: 4vw;
+	height: 6.5vw;
+	background: url(../images/dotted-rectangle-vertical.png) no-repeat;
+	background-size: contain;
+	background-position: left top;
+	filter: brightness(0) invert(1);
+	z-index: -1;
+}
+.industries::after{
+	position: absolute;
+	content: '';
+	right: 5vw;
+	bottom: 5vw;
+	width: 6.5vw;
+	height: 4vw;
+	background: url(../images/dotted-rectangle-horizontal.png) no-repeat;
+	background-size: contain;
+	background-position: left top;
+	filter: brightness(0) invert(1);
+	z-index: -1;
 }
 .coverflow_slider_wrapper{
 	width: 100%;
@@ -292,12 +345,39 @@ section.transform .info_boxes .text_box{
 	border-radius: 50%;
 	z-index: 1;
 	cursor: pointer;
+
+	opacity: 0;
+	pointer-events: none;
 }
 .custom-nav-next{
 	left: unset;
 	right: 0;
 }
 
+.our_work::before{
+	position: absolute;
+	content: '';
+	left: 5vw;
+	top: 5vw;
+	width: 4vw;
+	height: 6.5vw;
+	background: url(../images/dotted-rectangle-vertical.png) no-repeat;
+	background-size: contain;
+	background-position: left top;
+	z-index: -1;
+}
+.our_work::after{
+	position: absolute;
+	content: '';
+	right: 5vw;
+	bottom: 5vw;
+	width: 6.5vw;
+	height: 4vw;
+	background: url(../images/dotted-rectangle-horizontal.png) no-repeat;
+	background-size: contain;
+	background-position: left top;
+	z-index: -1;
+}
 .our_work .insta_boxes{
 	display: flex;
 	flex-wrap: wrap;
@@ -330,4 +410,96 @@ section.transform .info_boxes .text_box{
 }
 .youtube_wrapper .youtube_box a img{
 	width: 100%;
+}
+
+footer{
+	background: #f1f2f2;
+}
+footer .inner_container{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5vw 0;
+}
+footer .inner_container .left_pane{
+	width: 45%;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+}
+footer .inner_container .left_pane .heading{
+	text-align: left;
+	padding: 0 0 1vw;
+	line-height: 1.2;
+}
+footer .inner_container .left_pane .upper_sec{
+	padding: 0 0 2vw 0;
+	margin: 0 0 2vw 0;
+	border-bottom: 1px solid var(--orange);
+}
+footer .inner_container .left_pane .ctc_sec{
+	margin: auto 0;
+	padding: 2vw 0;
+}
+footer .inner_container .left_pane .ctc_sec p{
+	padding: 0;
+}
+footer .inner_container .left_pane .social_sec ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+footer .inner_container .left_pane .social_sec ul li{
+	padding: 0 2.2vw 0 0;
+}
+footer .inner_container .left_pane .social_sec ul li img{
+	width: 3.6vw;
+}
+footer .inner_container .center_pane{
+	width: 20%;
+}
+footer .inner_container .center_pane .logo_box{
+	width: 40%;
+	margin: auto;
+}
+footer .inner_container .right_pane{
+	width: 35%;
+}
+footer .inner_container .right_pane .form_wrapper form .upper_box{
+	background-color: var(--orange);
+	padding: 4vw;
+}
+.form-group{
+	padding: 0 0 15px;
+}
+.form-group.last_child{
+	padding: 0;
+}
+.form-group .form-label{
+	color: #fff;
+	display: inline-block;
+	padding: 0 0 2px;
+}
+.form-group .form-control{
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: clamp(16px, 1.25vw, 20px);
+	padding: 5px 10px;
+}
+.submit_btn{
+	font-size: clamp(14px,1.35vw,30px);
+	color: #fff;
+	font-weight: 600;
+	background-color: var(--orange);
+	border: none;
+	outline: none;
+	width: 100%;
+	padding: 10px 30px;
+	margin: 2vw 0 0 0;
+}
+footer .last_line{
+	background-color: var(--orange);
+	padding: 10px 0;
+	padding: 10px 5vw;
+	text-align: center;
+	color: #fff;
 }

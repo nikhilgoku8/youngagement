@@ -52,13 +52,9 @@
                 <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
                 <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
                     <li>
-                        <a>
-                            <span class="title">About</span>
-                            <span class="arrow"></span> 
+                        <a href="#">
+                            <span class="title">Lorem Ipsum 1</span>
                         </a>
-                        <ul>
-                            <li><a href="#">Lorem Ipsum 1</a></li>
-                        </ul>
                     </li>
                     <li>
                         <a href="#">
@@ -136,41 +132,41 @@
                             <div class="swiper-slide">
                                 <div class="item_box">
                                     <div class="img_box">
-                                        <img src="images/grey.png">
+                                        <img src="images/industries/real-estate.png">
                                     </div>
-                                    <div class="industry_title">Industry 1</div>
+                                    <div class="industry_title">Real Estate</div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="item_box">
                                     <div class="img_box">
-                                        <img src="images/grey.png">
+                                        <img src="images/industries/wellness-and-nutrition.png">
                                     </div>
-                                    <div class="industry_title">Industry 2</div>
+                                    <div class="industry_title">Wellness & Nutrition</div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="item_box">
                                     <div class="img_box">
-                                        <img src="images/grey.png">
+                                        <img src="images/industries/poetry-and-art.png">
                                     </div>
-                                    <div class="industry_title">Industry 3</div>
+                                    <div class="industry_title">Poetry & Art</div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="item_box">
                                     <div class="img_box">
-                                        <img src="images/grey.png">
+                                        <img src="images/industries/automotive-lifestyle.png">
                                     </div>
-                                    <div class="industry_title">Industry 4</div>
+                                    <div class="industry_title">Automotive Lifestyle</div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="item_box">
                                     <div class="img_box">
-                                        <img src="images/grey.png">
+                                        <img src="images/industries/travel-and-hospitality.png">
                                     </div>
-                                    <div class="industry_title">Industry 5</div>
+                                    <div class="industry_title">Travel & Hospitality</div>
                                 </div>
                             </div>
 
@@ -179,8 +175,8 @@
 
                         <!-- <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div> -->
-                        <!-- <div class="custom-nav-prev"><i class="fas fa-chevron-left"></i></div>
-                        <div class="custom-nav-next"><i class="fas fa-chevron-right"></i></div> -->
+                        <div class="custom-nav-prev"><i class="fas fa-chevron-left"></i></div>
+                        <div class="custom-nav-next"><i class="fas fa-chevron-right"></i></div>
 
                         <!-- <div class="swiper-scrollbar"></div> -->
                     </div>
@@ -200,10 +196,10 @@
 
             <div class="insta_boxes">
                 
-                <?php for($i=1; $i<=10; $i++){ ?>
+                <?php for($i=1; $i<=9; $i++){ ?>
                 <div class="info_box">
                     <div class="img_box">
-                        <img src="images/grey.png">
+                        <img src="images/our-work/<?php echo $i; ?>.png">
                     </div>
                 </div>
                 <?php } ?>
@@ -237,7 +233,7 @@
 <!-- main -->
 
 <footer>
-    <div class="contain_80">
+    <div class="contain_90">
         <div class="inner_container">
 
             <div class="left_pane">
@@ -251,6 +247,39 @@
                             success stories, and craft a roadmap tailored to your business goals.</p>
                     </div>
                 </div>
+                <div class="middle_sec">
+                    <div class="heading">Pre-Consultation Form</div>
+                    <div class="text">
+                        <p>Please fill in the form below to get started and receive our email sequence along with insights into our strategic framework.</p>
+                    </div>
+                </div>
+                <div class="ctc_sec">
+                    <div class="text">
+                        <p>For business enquiries and to know more, call</p>
+                        <p><b>Wilfred at +91 9820010959,</b></p>
+                        <p><b>Landline: +91 022 28702299</b></p>
+                        <p><b>Write to us at wilfredf@youngistancreatives.com</b></p>
+                    </div>
+                </div>
+                <div class="social_sec">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="images/icons/facebook.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="images/icons/instagram.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="images/icons/linkedin.png">
+                            </a>
+                        </li>
+                    <ul>
+                </div>
             </div>
             <div class="center_pane">
                 <div class="logo_box">
@@ -259,20 +288,63 @@
             </div>
             <div class="right_pane">
                 <div class="form_wrapper">
-                    <form>
+                    <form id="enquire_form" action="" method="POST">
+                        <div class="upper_box">
 
+                            <div class="col-sm-12 form-group">
+                                <label class="form-label">Name</label>
+                                <div class="error form_error form-error-fname"></div>
+                                <input name="fname" id="fname" class="form-control" type="text">
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label class="form-label">Email</label>
+                                <div class="error form_error form-error-fname"></div>
+                                <input name="fname" id="fname" class="form-control" type="text">
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label class="form-label">Contact Number</label>
+                                <div class="error form_error form-error-fname"></div>
+                                <input name="fname" id="fname" class="form-control" type="text">
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label class="form-label">Business Name</label>
+                                <div class="error form_error form-error-fname"></div>
+                                <input name="fname" id="fname" class="form-control" type="text">
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label class="form-label">Industry</label>
+                                <div class="error form_error form-error-fname"></div>
+                                <input name="fname" id="fname" class="form-control" type="text">
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <label class="form-label">Social Media Handles (if any)</label>
+                                <div class="error form_error form-error-fname"></div>
+                                <input name="fname" id="fname" class="form-control" type="text">
+                            </div>
+                            <div class="col-sm-12 form-group last_child">
+                                <label class="form-label">Goals/Expectations from Consultation</label>
+                                <div class="error form_error form-error-fname"></div>
+                                <input name="fname" id="fname" class="form-control" type="text">
+                            </div>
+                            <div class="clr"></div>
+
+                        </div>
+                        <div class="lower_box">
+                            <button type="submit" class="submit_btn">Book Your Consultation for &#8377; 999</button>
+                        </div>
                     </form>
                 </div>
             </div>
 
         </div>
     </div>
+    <div class="last_line">Copyright © 2024 Youngistan Creative & Digital Services Pvt. Ltd., All rights reserved.</div>
 </footer>
 
 
 
 <!--sticky header-->
-<!-- <script src="js/classie.js"></script>
+<script src="js/classie.js"></script>
 <script>
 function init() {
 window.addEventListener('scroll', function(e){
@@ -289,7 +361,7 @@ window.addEventListener('scroll', function(e){
 });
 }
 window.onload = init();
-</script> -->
+</script>
 <!-- <script src="js/common.js"></script> -->
 <!-- <script src="js/jquery.easing.1.3.js"></script> -->
 
@@ -327,15 +399,22 @@ new WOW().init();
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 <script>
 var coverflow_slider = new Swiper(".coverflow_slider", {
-      slidesPerView: 3,
-      centeredSlides: true,
-      loop: true,
-      slideToClickedSlide: true,
-        navigation: {
-            // nextEl: '.swiper-button-next',
-            // prevEl: '.swiper-button-prev',
-            nextEl: '.custom-nav-next',
-            prevEl: '.custom-nav-prev',
+        slidesPerView: 1,
+        centeredSlides: true,
+        loop: true,
+        slideToClickedSlide: true,
+                navigation: {
+                    // nextEl: '.swiper-button-next',
+                    // prevEl: '.swiper-button-prev',
+                    nextEl: '.custom-nav-next',
+                    prevEl: '.custom-nav-prev',
+                },
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 3
+            }
         }
     });
 
