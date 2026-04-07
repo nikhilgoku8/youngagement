@@ -79,11 +79,13 @@
     <div class="contain_90">
         <div class="inner_container">
 
-            <div class="video_wrapper">
-                <video autoplay muted loop>
-                    <source src="videos/hero.mp4" type="video/mp4">
+            <div class="video_wrapper" style="aspect-ratio: 100 / 56.24;border-radius: 10px;overflow: hidden;">
+                <!-- <video autoplay muted loop poster="https://i.ytimg.com/vi/aAZuqzSiHMg/maxresdefault.jpg">
+                    <source src="https://youtu.be/aAZuqzSiHMg?si=0FrEMIEMmtMDwC1c" type="video/mp4">
                     Your browser does not support the video tag.
-                </video>
+                </video> -->
+
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/aAZuqzSiHMg?controls=0&loop=1&autoplay=1&mute=1&modestbranding=1&showinfo=0&autohide=1&rel=0" title="Possibilities for Growth" frameborder="0" allow="accelerometer; autoplay;muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
         </div>
@@ -196,13 +198,51 @@
 
             <div class="insta_boxes">
                 
-                <?php for($i=1; $i<=9; $i++){ ?>
-                <div class="info_box">
+                <a class="info_box" href="https://www.instagram.com/vanillastays18" target="_blank">
                     <div class="img_box">
-                        <img src="images/our-work/<?php echo $i; ?>.png">
+                        <img src="images/our-work/vanillastays18.png">
                     </div>
-                </div>
-                <?php } ?>
+                </a>
+                <a class="info_box" href="https://www.instagram.com/nutritionwithvibha" target="_blank">
+                    <div class="img_box">
+                        <img src="images/our-work/nutritionwithvibha.png">
+                    </div>
+                </a>
+                <a class="info_box" href="https://www.instagram.com/mumbaimakeover_25" target="_blank">
+                    <div class="img_box">
+                        <img src="images/our-work/mumbaimakeover_25.png">
+                    </div>
+                </a>
+                <a class="info_box" href="https://www.instagram.com/groupshreekrishna" target="_blank">
+                    <div class="img_box">
+                        <img src="images/our-work/groupshreekrishna.png">
+                    </div>
+                </a>
+                <a class="info_box" href="https://www.instagram.com/hitechseatcovers.in" target="_blank">
+                    <div class="img_box">
+                        <img src="images/our-work/hitechseatcovers.png">
+                    </div>
+                </a>
+                <a class="info_box" href="https://www.instagram.com/shreepatigroupofcompanies" target="_blank">
+                    <div class="img_box">
+                        <img src="images/our-work/shreepatigroupofcompanies.png">
+                    </div>
+                </a>
+                <a class="info_box" href="https://www.instagram.com/happyhomegroup" target="_blank">
+                    <div class="img_box">
+                        <img src="images/our-work/happyhomegroup.png">
+                    </div>
+                </a>
+                <a class="info_box" href="https://www.instagram.com/nic_newindiaconstructions" target="_blank">
+                    <div class="img_box">
+                        <img src="images/our-work/nic_newindiaconstructions.png">
+                    </div>
+                </a>
+                <a class="info_box" href="https://www.instagram.com/venusgrandeur_" target="_blank">
+                    <div class="img_box">
+                        <img src="images/our-work/venusgrandeur_.png">
+                    </div>
+                </a>
 
             </div>
             <!-- insta_boxes -->
