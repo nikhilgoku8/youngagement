@@ -28,6 +28,10 @@
 <!-- <script src="js/jquery.3.7.1.min.js"></script> -->
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+
 </head>
 
 <body>
@@ -79,13 +83,13 @@
     <div class="contain_90">
         <div class="inner_container">
 
-            <div class="video_wrapper" style="aspect-ratio: 100 / 56.24;border-radius: 10px;overflow: hidden;">
+            <div class="video_wrapper scale-in">
                 <!-- <video autoplay muted loop poster="https://i.ytimg.com/vi/aAZuqzSiHMg/maxresdefault.jpg">
                     <source src="https://youtu.be/aAZuqzSiHMg?si=0FrEMIEMmtMDwC1c" type="video/mp4">
                     Your browser does not support the video tag.
                 </video> -->
 
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/aAZuqzSiHMg?controls=0&loop=1&autoplay=1&mute=1&modestbranding=1&showinfo=0&autohide=1&rel=0" title="Possibilities for Growth" frameborder="0" allow="accelerometer; autoplay;muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/aAZuqzSiHMg?controls=0&loop=1&autoplay=1&modestbranding=1&showinfo=0&autohide=1&rel=0" title="Possibilities for Growth" frameborder="0" allow="accelerometer; autoplay;muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
         </div>
@@ -97,16 +101,16 @@
     <div class="contain_90">
         <div class="inner_container">
 
-            <div class="heading">Transform Your Brand’s Digital Presence <br>Engage. Automate. Grow</div>
+            <div class="heading fade-in-up">Transform Your Brand’s Digital Presence <br>Engage. Automate. Grow</div>
 
             <div class="info_boxes">
                 <div class="col-sm-6">
-                    <div class="img_box">
+                    <div class="img_box fade-in-left">
                         <img src="images/transform.png">
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="text_box">
+                    <div class="text_box fade-in-right">
                         <p>At Youngagement, we help brands drive real social media impact through storytelling, community building, and conversion-focused strategies.</p>
                         <p>Our customized, data-driven approach connects you with the right audience and fuels smarter growth.</p>
                         <p>Join hands with a team that blends creativity with insight to help you engage smarter, automate faster, and grow stronger.</p>
@@ -124,9 +128,9 @@
     <div class="contain_80">
         <div class="inner_container">
 
-            <div class="heading white">Industries & Categories We Have Worked With</div>
+            <div class="heading white fade-in-up">Industries & Categories We Have Worked With</div>
 
-            <div class="coverflow_slider_wrapper">
+            <div class="coverflow_slider_wrapper fade-in-scale-up">
 
                     <div class="coverflow_slider">
                         <div class="swiper-wrapper">
@@ -194,51 +198,51 @@
     <div class="contain_80">
         <div class="inner_container">
 
-            <div class="heading">Our Work</div>
+            <div class="heading fade-in-up">Our Work</div>
 
             <div class="insta_boxes">
                 
-                <a class="info_box" href="https://www.instagram.com/vanillastays18" target="_blank">
+                <a class="info_box scale-in" href="https://www.instagram.com/vanillastays18" target="_blank">
                     <div class="img_box">
                         <img src="images/our-work/vanillastays18.png">
                     </div>
                 </a>
-                <a class="info_box" href="https://www.instagram.com/nutritionwithvibha" target="_blank">
+                <a class="info_box scale-in" href="https://www.instagram.com/nutritionwithvibha" target="_blank">
                     <div class="img_box">
                         <img src="images/our-work/nutritionwithvibha.png">
                     </div>
                 </a>
-                <a class="info_box" href="https://www.instagram.com/mumbaimakeover_25" target="_blank">
+                <a class="info_box scale-in" href="https://www.instagram.com/mumbaimakeover_25" target="_blank">
                     <div class="img_box">
                         <img src="images/our-work/mumbaimakeover_25.png">
                     </div>
                 </a>
-                <a class="info_box" href="https://www.instagram.com/groupshreekrishna" target="_blank">
+                <a class="info_box scale-in" href="https://www.instagram.com/groupshreekrishna" target="_blank">
                     <div class="img_box">
                         <img src="images/our-work/groupshreekrishna.png">
                     </div>
                 </a>
-                <a class="info_box" href="https://www.instagram.com/hitechseatcovers.in" target="_blank">
+                <a class="info_box scale-in" href="https://www.instagram.com/hitechseatcovers.in" target="_blank">
                     <div class="img_box">
                         <img src="images/our-work/hitechseatcovers.png">
                     </div>
                 </a>
-                <a class="info_box" href="https://www.instagram.com/shreepatigroupofcompanies" target="_blank">
+                <a class="info_box scale-in" href="https://www.instagram.com/shreepatigroupofcompanies" target="_blank">
                     <div class="img_box">
                         <img src="images/our-work/shreepatigroupofcompanies.png">
                     </div>
                 </a>
-                <a class="info_box" href="https://www.instagram.com/happyhomegroup" target="_blank">
+                <a class="info_box scale-in" href="https://www.instagram.com/happyhomegroup" target="_blank">
                     <div class="img_box">
                         <img src="images/our-work/happyhomegroup.png">
                     </div>
                 </a>
-                <a class="info_box" href="https://www.instagram.com/nic_newindiaconstructions" target="_blank">
+                <a class="info_box scale-in" href="https://www.instagram.com/nic_newindiaconstructions" target="_blank">
                     <div class="img_box">
                         <img src="images/our-work/nic_newindiaconstructions.png">
                     </div>
                 </a>
-                <a class="info_box" href="https://www.instagram.com/venusgrandeur_" target="_blank">
+                <a class="info_box scale-in" href="https://www.instagram.com/venusgrandeur_" target="_blank">
                     <div class="img_box">
                         <img src="images/our-work/venusgrandeur_.png">
                     </div>
@@ -256,12 +260,40 @@
     <div class="contain_80">
         <div class="inner_container">
 
-            <div class="heading white">YouTube Channels</div>
+            <div class="heading white fade-in-up">YouTube Channels</div>
+            
+            <div class="swiper fade-in-scale-up">
 
-            <div class="youtube_box">
-                <a href="#">
-                    <img src="images/800x600.png">
-                </a>
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="youtube_box">
+                            <a href="https://www.youtube.com/@mumbaimakeover-rdvt" target="_blank">
+                                <img src="images/youtube-channels/mumbaimakeover-rdvt.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="youtube_box">
+                            <a href="https://www.youtube.com/@nutritionwithvibha" target="_blank">
+                                <img src="images/youtube-channels/nutritionwithvibha.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="youtube_box">
+                            <a href="https://www.youtube.com/@VanillaStays" target="_blank">
+                                <img src="images/youtube-channels/VanillaStays.png">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+                <div class="custom-nav-prev"><i class="fas fa-chevron-left"></i></div>
+                <div class="custom-nav-next"><i class="fas fa-chevron-right"></i></div>
             </div>
 
         </div>
@@ -277,7 +309,7 @@
         <div class="inner_container">
 
             <div class="left_pane">
-                <div class="upper_sec">
+                <div class="upper_sec fade-in-left">
                     <div class="heading">Call to Action</div>
                     <div class="text">
                         <p>Ready to elevate your brand’s social media game?
@@ -287,13 +319,13 @@
                             success stories, and craft a roadmap tailored to your business goals.</p>
                     </div>
                 </div>
-                <div class="middle_sec">
+                <div class="middle_sec fade-in-left">
                     <div class="heading">Pre-Consultation Form</div>
                     <div class="text">
                         <p>Please fill in the form below to get started and receive our email sequence along with insights into our strategic framework.</p>
                     </div>
                 </div>
-                <div class="ctc_sec">
+                <div class="ctc_sec fade-in-left">
                     <div class="text">
                         <p>For business enquiries and to know more, call</p>
                         <p><b>Wilfred at +91 9820010959,</b></p>
@@ -301,7 +333,7 @@
                         <p><b>Write to us at wilfredf@youngistancreatives.com</b></p>
                     </div>
                 </div>
-                <div class="social_sec">
+                <div class="social_sec fade-in-up-footer">
                     <ul>
                         <li>
                             <a href="#" target="_blank">
@@ -322,12 +354,12 @@
                 </div>
             </div>
             <div class="center_pane">
-                <div class="logo_box">
+                <div class="logo_box scale-in">
                     <img src="images/logo.png">
                 </div>
             </div>
             <div class="right_pane">
-                <div class="form_wrapper">
+                <div class="form_wrapper scale-in">
                     <form id="enquire_form" action="" method="POST">
                         <div class="upper_box">
 
@@ -458,6 +490,22 @@ var coverflow_slider = new Swiper(".coverflow_slider", {
         }
     });
 
+
+
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    autoplay: {
+       delay: 5000,
+    },
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.custom-nav-next',
+        prevEl: '.custom-nav-prev',
+    }
+});
+
 // const swiper = new Swiper('.swiper', {
 //      autoplay: {
 //        delay: 5000,
@@ -508,6 +556,8 @@ var coverflow_slider = new Swiper(".coverflow_slider", {
 //     }
 // }
 </script>
+
+<script src="js/custom.js"></script>
 
 </body>
 </html>

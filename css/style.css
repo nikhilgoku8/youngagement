@@ -190,6 +190,15 @@ header.smaller nav {
 }
 
 /* hero */
+.hero{
+	user-select: none;
+}
+.hero .video_wrapper{
+	aspect-ratio: 100 / 56.24;
+	border-radius: 10px;
+	overflow: hidden;
+	/* pointer-events: none; */
+}
 .hero .video_wrapper video{
 	width: 100%;
 	height: auto;
@@ -346,8 +355,11 @@ section.transform .info_boxes .text_box{
 	z-index: 1;
 	cursor: pointer;
 
+}
+.coverflow_slider [class*=custom-nav]{
 	opacity: 0;
 	pointer-events: none;
+
 }
 .custom-nav-next{
 	left: unset;
@@ -502,4 +514,12 @@ footer .last_line{
 	padding: 10px 5vw;
 	text-align: center;
 	color: #fff;
+}
+
+.youtube_wrapper [class*=custom-nav]{
+	left: 10px;
+}
+.youtube_wrapper .custom-nav-next{
+	left: unset;
+	right: 10px;
 }

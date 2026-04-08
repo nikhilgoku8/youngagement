@@ -257,7 +257,7 @@ section.transform .info_boxes .text_box{
 .coverflow_slider .swiper-slide .industry_title{
 	padding: 2vw 0 0 0;
 }
-[class*=custom-nav]{
+.coverflow_slider [class*=custom-nav]{
 	opacity: 1;
 	pointer-events: all;
 }
