@@ -204,47 +204,47 @@
                 
                 <a class="info_box scale-in" href="https://www.instagram.com/vanillastays18" target="_blank">
                     <div class="img_box">
-                        <img src="images/our-work/vanillastays18.png">
+                        <img src="images/our-work/vanillastays18.jpg">
                     </div>
                 </a>
                 <a class="info_box scale-in" href="https://www.instagram.com/nutritionwithvibha" target="_blank">
                     <div class="img_box">
-                        <img src="images/our-work/nutritionwithvibha.png">
+                        <img src="images/our-work/nutritionwithvibha.jpg">
                     </div>
                 </a>
                 <a class="info_box scale-in" href="https://www.instagram.com/mumbaimakeover_25" target="_blank">
                     <div class="img_box">
-                        <img src="images/our-work/mumbaimakeover_25.png">
+                        <img src="images/our-work/mumbaimakeover_25.jpg">
                     </div>
                 </a>
                 <a class="info_box scale-in" href="https://www.instagram.com/groupshreekrishna" target="_blank">
                     <div class="img_box">
-                        <img src="images/our-work/groupshreekrishna.png">
+                        <img src="images/our-work/groupshreekrishna.jpg">
                     </div>
                 </a>
                 <a class="info_box scale-in" href="https://www.instagram.com/hitechseatcovers.in" target="_blank">
                     <div class="img_box">
-                        <img src="images/our-work/hitechseatcovers.png">
+                        <img src="images/our-work/hitechseatcovers.jpg">
                     </div>
                 </a>
                 <a class="info_box scale-in" href="https://www.instagram.com/shreepatigroupofcompanies" target="_blank">
                     <div class="img_box">
-                        <img src="images/our-work/shreepatigroupofcompanies.png">
+                        <img src="images/our-work/shreepatigroupofcompanies.jpg">
                     </div>
                 </a>
                 <a class="info_box scale-in" href="https://www.instagram.com/happyhomegroup" target="_blank">
                     <div class="img_box">
-                        <img src="images/our-work/happyhomegroup.png">
+                        <img src="images/our-work/happyhomegroup.jpg">
                     </div>
                 </a>
                 <a class="info_box scale-in" href="https://www.instagram.com/nic_newindiaconstructions" target="_blank">
                     <div class="img_box">
-                        <img src="images/our-work/nic_newindiaconstructions.png">
+                        <img src="images/our-work/nic_newindiaconstructions.jpg">
                     </div>
                 </a>
                 <a class="info_box scale-in" href="https://www.instagram.com/venusgrandeur_" target="_blank">
                     <div class="img_box">
-                        <img src="images/our-work/venusgrandeur_.png">
+                        <img src="images/our-work/venusgrandeur_.jpg">
                     </div>
                 </a>
 
