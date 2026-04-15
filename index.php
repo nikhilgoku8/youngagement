@@ -56,19 +56,29 @@
                 <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
                 <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
                     <li>
-                        <a href="#">
-                            <span class="title">Lorem Ipsum 1</span>
+                        <a href="#home">
+                            <span class="title">Home</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <span class="title">Lorem Ipsum 2</span>
+                        <a href="#about-us">
+                            <span class="title">About us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#our-categories">
+                            <span class="title">Our Categories</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#our-work">
+                            <span class="title">Our Work</span>
                         </a>
                     </li>
                 </ul>
             </nav>
             <div class="c2a_btn">
-                <a href="#" class="btn">Contact Us</a>
+                <a href="#contact-us" class="btn">Contact Us</a>
             </div>
 
         </div>
@@ -80,6 +90,7 @@
 <div id="main">
 
 <div class="hero">
+    <span class="section_link" id="home"></span>
     <div class="contain_90">
         <div class="inner_container">
 
@@ -98,6 +109,7 @@
 <!-- hero -->
 
 <section class="transform">
+    <span class="section_link" id="about-us"></span>
     <div class="contain_90">
         <div class="inner_container">
 
@@ -125,6 +137,7 @@
 <!-- transform -->
 
 <section class="industries">
+    <span class="section_link" id="our-categories"></span>
     <div class="contain_80">
         <div class="inner_container">
 
@@ -195,6 +208,7 @@
 <!-- industries -->
 
 <section class="our_work">
+    <span class="section_link" id="our-work"></span>
     <div class="contain_80">
         <div class="inner_container">
 
@@ -360,43 +374,44 @@
             </div>
             <div class="right_pane">
                 <div class="form_wrapper scale-in">
+                    <span class="section_link" id="contact-us"></span>
                     <form id="enquire_form" action="" method="POST">
                         <div class="upper_box">
 
                             <div class="col-sm-12 form-group">
                                 <label class="form-label">Name</label>
                                 <div class="error form_error form-error-fname"></div>
-                                <input name="fname" id="fname" class="form-control" type="text">
+                                <input name="fname" class="form-control" type="text">
                             </div>
                             <div class="col-sm-12 form-group">
                                 <label class="form-label">Email</label>
-                                <div class="error form_error form-error-fname"></div>
-                                <input name="fname" id="fname" class="form-control" type="text">
+                                <div class="error form_error form-error-email"></div>
+                                <input name="email" class="form-control" type="text">
                             </div>
                             <div class="col-sm-12 form-group">
                                 <label class="form-label">Contact Number</label>
-                                <div class="error form_error form-error-fname"></div>
-                                <input name="fname" id="fname" class="form-control" type="text">
+                                <div class="error form_error form-error-phone"></div>
+                                <input name="phone" class="form-control" type="text">
                             </div>
                             <div class="col-sm-12 form-group">
                                 <label class="form-label">Business Name</label>
-                                <div class="error form_error form-error-fname"></div>
-                                <input name="fname" id="fname" class="form-control" type="text">
+                                <div class="error form_error form-error-business_name"></div>
+                                <input name="business_name" class="form-control" type="text">
                             </div>
                             <div class="col-sm-12 form-group">
                                 <label class="form-label">Industry</label>
-                                <div class="error form_error form-error-fname"></div>
-                                <input name="fname" id="fname" class="form-control" type="text">
+                                <div class="error form_error form-error-industry"></div>
+                                <input name="industry" class="form-control" type="text">
                             </div>
                             <div class="col-sm-12 form-group">
                                 <label class="form-label">Social Media Handles (if any)</label>
-                                <div class="error form_error form-error-fname"></div>
-                                <input name="fname" id="fname" class="form-control" type="text">
+                                <div class="error form_error form-error-social_media"></div>
+                                <input name="social_media" class="form-control" type="text">
                             </div>
                             <div class="col-sm-12 form-group last_child">
                                 <label class="form-label">Goals/Expectations from Consultation</label>
-                                <div class="error form_error form-error-fname"></div>
-                                <input name="fname" id="fname" class="form-control" type="text">
+                                <div class="error form_error form-error-goals"></div>
+                                <input name="goals" class="form-control" type="text">
                             </div>
                             <div class="clr"></div>
 
@@ -413,6 +428,66 @@
     <div class="last_line">Copyright © 2024 Youngistan Creative & Digital Services Pvt. Ltd., All rights reserved.</div>
 </footer>
 
+<script>
+
+$("#enquire_form").on('submit',(function(e){
+    $this = $(this);
+    e.preventDefault();
+    $(".form_error").html("");
+    $(".form_error").removeClass("alert alert-danger");
+
+    var formData = new FormData(this);
+    var $submitButton = $this.find("[type='submit']");
+
+    $this.find(".form_error").html("");
+
+    $submitButton.attr('disabled', 'disabled');
+
+    $.ajax({
+        type: "POST",
+        url: "form_process.php",
+        data:  new FormData(this),
+        dataType: 'json',
+        cache: false,
+        contentType: false,
+        processData: false,
+        success: function(response) {
+            location.href="thank-you.php";
+        },
+        error: function(data){
+            if (data.status === 422) {
+                let errors = data.responseJSON.error.errors;
+                $.each(errors, function (key, message) {
+                    var fieldName = key.replace(/\./g, '-');
+                    $this.find(".form-error-"+fieldName).html(message);
+                    $this.find(".form-error-"+fieldName).addClass('alert alert-danger');
+                    // $('#form-error-' + key).html(message).addClass('alert alert-danger');
+                });
+            } else if (data.status === 401) {
+                alert("Please log in.");
+                // window.location.href = "/login";
+            } else if (data.status === 403) {
+                alert("You don’t have permission.");
+            } else if (data.status === 404) {
+                alert("The resource was not found.");
+            } else if (data.status === 500) {
+                alert("Something went wrong on the server.");
+                console.log(data.console_message);
+            } else {
+                alert("Unexpected error: " + data.status);
+                console.log(data);
+            }
+            // var errors = data.responseJSON;
+            // jQuery.each( errors.error.errors, function( i, val ) {
+            //     $("#form-error-"+i).html(val);
+            // });
+            $submitButton.removeAttr('disabled');
+        }
+    });
+
+}));
+
+</script>
 
 
 <!--sticky header-->

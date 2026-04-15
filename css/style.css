@@ -6,6 +6,7 @@
 	#Font-Face */
 :root{
 	--header-height: 127.94px;
+	--small-header-height: 86.27px;
 	--orange: #f17f21;
 }
 *{
@@ -25,6 +26,9 @@
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
+}
+html{
+	scroll-behavior: smooth;
 }
 body{
 	height: 100%;
@@ -193,6 +197,10 @@ header.smaller nav {
 .hero{
 	user-select: none;
 }
+.hero .section_link{
+	position: absolute;
+	top: calc(var(--header-height) * -1);
+}
 .hero .video_wrapper{
 	aspect-ratio: 100 / 56.24;
 	border-radius: 10px;
@@ -218,6 +226,10 @@ header.smaller nav {
 section{
 	padding: 5vw 0;
 	position: relative;
+}
+.section_link{
+	position: absolute;
+	top: calc(var(--small-header-height) * -1);
 }
 section.transform::before{
 	position: absolute;
@@ -522,4 +534,12 @@ footer .last_line{
 .youtube_wrapper .custom-nav-next{
 	left: unset;
 	right: 10px;
+}
+.error{
+	color: #ffffff;
+    font-size: 12px;
+}
+.error.alert-danger{
+	padding: 5px;
+	background-color: red;
 }
