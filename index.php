@@ -118,7 +118,7 @@
             <div class="info_boxes">
                 <div class="col-sm-6">
                     <div class="img_box fade-in-left">
-                        <img src="images/transform.png">
+                        <img src="images/transform.webp">
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -151,7 +151,7 @@
                             <div class="swiper-slide">
                                 <div class="item_box">
                                     <div class="img_box">
-                                        <img src="images/industries/real-estate.png">
+                                        <img src="images/industries/real-estate.webp">
                                     </div>
                                     <div class="industry_title">Real Estate</div>
                                 </div>
@@ -159,7 +159,7 @@
                             <div class="swiper-slide">
                                 <div class="item_box">
                                     <div class="img_box">
-                                        <img src="images/industries/wellness-and-nutrition.png">
+                                        <img src="images/industries/wellness-and-nutrition.webp">
                                     </div>
                                     <div class="industry_title">Wellness & Nutrition</div>
                                 </div>
@@ -167,7 +167,7 @@
                             <div class="swiper-slide">
                                 <div class="item_box">
                                     <div class="img_box">
-                                        <img src="images/industries/poetry-and-art.png">
+                                        <img src="images/industries/poetry-and-art.webp">
                                     </div>
                                     <div class="industry_title">Poetry & Art</div>
                                 </div>
@@ -175,7 +175,7 @@
                             <div class="swiper-slide">
                                 <div class="item_box">
                                     <div class="img_box">
-                                        <img src="images/industries/automotive-lifestyle.png">
+                                        <img src="images/industries/automotive-lifestyle.webp">
                                     </div>
                                     <div class="industry_title">Automotive Lifestyle</div>
                                 </div>
@@ -183,7 +183,7 @@
                             <div class="swiper-slide">
                                 <div class="item_box">
                                     <div class="img_box">
-                                        <img src="images/industries/travel-and-hospitality.png">
+                                        <img src="images/industries/travel-and-hospitality.webp">
                                     </div>
                                     <div class="industry_title">Travel & Hospitality</div>
                                 </div>
@@ -218,47 +218,47 @@
                 
                 <a class="info_box scale-in" href="https://www.instagram.com/vanillastays18" target="_blank">
                     <div class="img_box">
-                        <img src="images/our-work/vanillastays18.jpg">
+                        <img src="images/our-work/vanillastays18.webp">
                     </div>
                 </a>
                 <a class="info_box scale-in" href="https://www.instagram.com/nutritionwithvibha" target="_blank">
                     <div class="img_box">
-                        <img src="images/our-work/nutritionwithvibha.jpg">
+                        <img src="images/our-work/nutritionwithvibha.webp">
                     </div>
                 </a>
                 <a class="info_box scale-in" href="https://www.instagram.com/mumbaimakeover_25" target="_blank">
                     <div class="img_box">
-                        <img src="images/our-work/mumbaimakeover_25.jpg">
+                        <img src="images/our-work/mumbaimakeover_25.webp">
                     </div>
                 </a>
                 <a class="info_box scale-in" href="https://www.instagram.com/groupshreekrishna" target="_blank">
                     <div class="img_box">
-                        <img src="images/our-work/groupshreekrishna.jpg">
+                        <img src="images/our-work/groupshreekrishna.webp">
                     </div>
                 </a>
                 <a class="info_box scale-in" href="https://www.instagram.com/hitechseatcovers.in" target="_blank">
                     <div class="img_box">
-                        <img src="images/our-work/hitechseatcovers.jpg">
+                        <img src="images/our-work/hitechseatcovers.webp">
                     </div>
                 </a>
                 <a class="info_box scale-in" href="https://www.instagram.com/shreepatigroupofcompanies" target="_blank">
                     <div class="img_box">
-                        <img src="images/our-work/shreepatigroupofcompanies.jpg">
+                        <img src="images/our-work/shreepatigroupofcompanies.webp">
                     </div>
                 </a>
                 <a class="info_box scale-in" href="https://www.instagram.com/happyhomegroup" target="_blank">
                     <div class="img_box">
-                        <img src="images/our-work/happyhomegroup.jpg">
+                        <img src="images/our-work/happyhomegroup.webp">
                     </div>
                 </a>
                 <a class="info_box scale-in" href="https://www.instagram.com/nic_newindiaconstructions" target="_blank">
                     <div class="img_box">
-                        <img src="images/our-work/nic_newindiaconstructions.jpg">
+                        <img src="images/our-work/nic_newindiaconstructions.webp">
                     </div>
                 </a>
                 <a class="info_box scale-in" href="https://www.instagram.com/venusgrandeur_" target="_blank">
                     <div class="img_box">
-                        <img src="images/our-work/venusgrandeur_.jpg">
+                        <img src="images/our-work/venusgrandeur_.webp">
                     </div>
                 </a>
 
@@ -283,21 +283,21 @@
                     <div class="swiper-slide">
                         <div class="youtube_box">
                             <a href="https://www.youtube.com/@mumbaimakeover-rdvt" target="_blank">
-                                <img src="images/youtube-channels/mumbaimakeover-rdvt.png">
+                                <img src="images/youtube-channels/mumbaimakeover-rdvt.webp">
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="youtube_box">
                             <a href="https://www.youtube.com/@nutritionwithvibha" target="_blank">
-                                <img src="images/youtube-channels/nutritionwithvibha.png">
+                                <img src="images/youtube-channels/nutritionwithvibha.webp">
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="youtube_box">
                             <a href="https://www.youtube.com/@VanillaStays" target="_blank">
-                                <img src="images/youtube-channels/VanillaStays.png">
+                                <img src="images/youtube-channels/VanillaStays.webp">
                             </a>
                         </div>
                     </div>
