@@ -328,7 +328,8 @@
                     <div class="text">
                         <p>Ready to elevate your brand’s social media game?
                             <br>
-                            Book your Pre-Consultation Session with us today for just Rs. 999! In this
+                            <!-- Book your Pre-Consultation Session with us today for just Rs. 999! In this -->
+                            Book your Pre-Consultation Session with us today for free! In this
                             session, we’ll walk you through our proven strategies, showcase our
                             success stories, and craft a roadmap tailored to your business goals.</p>
                     </div>
@@ -350,18 +351,13 @@
                 <div class="social_sec fade-in-up-footer">
                     <ul>
                         <li>
-                            <a href="#" target="_blank">
+                            <a href="https://www.facebook.com/share/1DQAPM8Jap/" target="_blank">
                                 <img src="images/icons/facebook.png">
                             </a>
                         </li>
                         <li>
-                            <a href="#" target="_blank">
+                            <a href="https://www.instagram.com/youngagement_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
                                 <img src="images/icons/instagram.png">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank">
-                                <img src="images/icons/linkedin.png">
                             </a>
                         </li>
                     <ul>
@@ -417,7 +413,8 @@
 
                         </div>
                         <div class="lower_box">
-                            <button type="submit" class="submit_btn">Book Your Consultation for &#8377; 999</button>
+                            <!-- <button type="submit" class="submit_btn">Book Your Consultation for &#8377; 999</button> -->
+                            <button type="submit" class="submit_btn">Book Your Consultation for Free</button>
                         </div>
                     </form>
                 </div>
