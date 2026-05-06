@@ -414,7 +414,7 @@
                         </div>
                         <div class="lower_box">
                             <!-- <button type="submit" class="submit_btn">Book Your Consultation for &#8377; 999</button> -->
-                            <button type="submit" class="submit_btn">Book Your Consultation for Free</button>
+                            <button type="submit" class="submit_btn">Book Your Free Consultations</button>
                         </div>
                     </form>
                 </div>
